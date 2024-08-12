@@ -23,4 +23,14 @@
       top: 50%;
     }
   }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.4rem;
+
+    h2 {
+      margin-top: .8rem;
+    }
+  }
 }
