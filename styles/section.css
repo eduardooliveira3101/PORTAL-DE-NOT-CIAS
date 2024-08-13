@@ -1,8 +1,29 @@
+section header {
+  border-top: .1rem solid var(--stroke-color);
+  padding-block: 1.2rem 2.4rem;
+  font: var(--text-span);
+
+  a {
+    justify-self: end;
+    align-items: center;
+    gap: .5rem;
+
+    span {
+      background-image: url(../assets/icons/ArrowRight.svg);
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+
+    &:hover span {
+      background-image: url(../assets/icons/ArrowRight-hover.svg);
+    }
+  }
+}
+
 #featured {
   img {
     height: 100%;
     object-fit: cover;
-    border-radius: .4rem;
 
   }
 
@@ -37,4 +58,31 @@
       margin-top: .8rem;
     }
   }
+}
+
+#weekly {
+
+  &>div {
+    grid-template-columns: repeat(4, 29.2rem);
+  }
+
+  img {
+    height: 16.0rem;
+  }
+
+  figure {
+    position: relative;
+
+    .content-tag {
+      position: absolute;
+      top: .8rem;
+      left: .8rem
+    }
+
+    p {
+      margin-top: .8rem;
+      font-weight: 800;
+    }
+  }
+
 }
